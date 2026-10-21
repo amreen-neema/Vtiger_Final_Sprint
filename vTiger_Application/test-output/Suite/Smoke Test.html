@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>TestNG:  Smoke Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Smoke Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Oct 18 13:27:20 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>167 seconds (167842 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>ST </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testScripts.CalendarTest.verifyCalendarModuleLoads()'><b>verifyCalendarModuleLoads</b><br>Test class: testScripts.CalendarTest<br/>
+<a href="#Output-13063602" onClick='toggleBox("Output-13063602", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13063602" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13063602">
+ST: Calendar module opened.<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>testScripts.CalendarTest@7e6f74c</td></tr>
+<tr>
+<td title='testScripts.ContactTest.verifyContactSearch()'><b>verifyContactSearch</b><br>Test class: testScripts.ContactTest<br/>
+<a href="#Output-1415937490" onClick='toggleBox("Output-1415937490", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1415937490" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1415937490">
+ST: Contact found: CON33715<br/>
+ST: Contact found: CON33716<br/>
+ST: Contact found: CON33717<br/>
+ST: Contact found: CON33718<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>testScripts.ContactTest@1165b38</td></tr>
+<tr>
+<td title='testScripts.OrganizationsTest.verifyOrganizationSearch()'><b>verifyOrganizationSearch</b><br>Test class: testScripts.OrganizationsTest<br/>
+<a href="#Output-808377204" onClick='toggleBox("Output-808377204", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-808377204" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-808377204">
+ST: Searched and opened ACC62389<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>testScripts.OrganizationsTest@6150c3ec</td></tr>
+</table><p>
+</body>
+</html>

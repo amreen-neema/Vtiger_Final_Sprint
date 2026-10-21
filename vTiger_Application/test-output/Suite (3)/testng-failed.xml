@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite (3)]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="System Test(failed)">
+    <groups>
+      <run>
+        <include name="YT"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testScripts.ContactTest">
+        <methods>
+          <include name="verifyDeleteContact"/>
+          <include name="dbConnection"/>
+          <include name="afterMethod"/>
+          <include name="at"/>
+          <include name="beforeMethod"/>
+          <include name="closeConnection"/>
+          <include name="bt"/>
+          <include name="ac"/>
+        </methods>
+      </class> <!-- testScripts.ContactTest -->
+      <class name="testScripts.OrganizationsTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="dbConnection"/>
+          <include name="at"/>
+          <include name="beforeMethod"/>
+          <include name="verifyDeleteOrganization"/>
+          <include name="closeConnection"/>
+          <include name="bt"/>
+          <include name="ac"/>
+        </methods>
+      </class> <!-- testScripts.OrganizationsTest -->
+      <class name="testScripts.CalendarTest">
+        <methods>
+          <include name="dbConnection"/>
+          <include name="afterMethod"/>
+          <include name="verifyCreateCalendarEvent"/>
+          <include name="beforeMethod"/>
+          <include name="at"/>
+          <include name="closeConnection"/>
+          <include name="bt"/>
+          <include name="ac"/>
+        </methods>
+      </class> <!-- testScripts.CalendarTest -->
+    </classes>
+  </test> <!-- System Test(failed) -->
+</suite> <!-- Failed suite [Suite (3)] -->

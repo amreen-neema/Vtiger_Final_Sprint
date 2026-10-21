@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite (0)]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="ST"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testScripts.ContactTest">
+        <methods>
+          <include name="verifyContactSearch"/>
+          <include name="dbConnection"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="at"/>
+          <include name="closeConnection"/>
+          <include name="ac"/>
+          <include name="bt"/>
+        </methods>
+      </class> <!-- testScripts.ContactTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite (0)] -->

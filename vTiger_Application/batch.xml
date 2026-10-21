@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Vtiger Batch Suite" verbose="2">
+
+    <suite-files>
+        <suite-file path="functional.xml"/>
+        <suite-file path="smoke.xml"/>
+        <suite-file path="integration.xml"/>
+        <suite-file path="negative.xml"/>
+        <suite-file path="system.xml"/>
+    </suite-files>
+
+</suite>
