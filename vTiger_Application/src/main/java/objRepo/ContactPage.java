@@ -429,6 +429,7 @@ public void fillMassEditDetailsExceptEmail() {
     email.clear();
 }
 
+
 private void enableMassEditField(String fieldName) {
 
     By field = By.name(fieldName);
@@ -437,7 +438,6 @@ private void enableMassEditField(String fieldName) {
         ExpectedConditions.presenceOfElementLocated(field)
     );
 
-    // Find a checkbox associated with this field, if present.
     java.util.List<WebElement> checkboxes =
         input.findElements(By.xpath(
             "./preceding-sibling::input[@type='checkbox']"
@@ -445,11 +445,22 @@ private void enableMassEditField(String fieldName) {
         ));
 
     for (WebElement checkbox : checkboxes) {
+
         if (!checkbox.isSelected()) {
-            checkbox.click();
+
+            ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].scrollIntoView({block:'center'});",
+                checkbox
+            );
+
+            ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].click();",
+                checkbox
+            );
         }
     }
 }
+
 
 private void enterMassEditField(
         String fieldName, String value) {

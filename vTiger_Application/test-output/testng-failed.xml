@@ -5,9 +5,9 @@
     <classes>
       <class name="testScripts.ContactTest">
         <methods>
-          <include name="verifyDeleteContact"/>
           <include name="dbConnection"/>
           <include name="afterMethod"/>
+          <include name="verifyEmptyEmailValidation"/>
           <include name="at"/>
           <include name="beforeMethod"/>
           <include name="closeConnection"/>

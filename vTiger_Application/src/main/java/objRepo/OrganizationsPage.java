@@ -193,20 +193,30 @@ public void clickOrganization(String organizationNumber) {
 }
 
     // IT: Select first organization using a fresh locator
-    public void selectFirstOrganization() {
 
-        By checkboxLocator = By.xpath(
-            "(//table//tr[td]//input[@type='checkbox'])[last()]"
+// IT: Select first organization
+public void selectFirstOrganization() {
+
+    By checkboxLocator = By.xpath(
+        "(//table//tr[td]//input[@type='checkbox'])[last()]"
+    );
+
+    WebElement checkbox = wait.until(
+        ExpectedConditions.presenceOfElementLocated(checkboxLocator)
+    );
+
+    ((JavascriptExecutor) driver).executeScript(
+        "arguments[0].scrollIntoView({block:'center'});",
+        checkbox
+    );
+
+    if (!checkbox.isSelected()) {
+        ((JavascriptExecutor) driver).executeScript(
+            "arguments[0].click();",
+            checkbox
         );
-
-        WebElement checkbox = wait.until(
-            ExpectedConditions.elementToBeClickable(checkboxLocator)
-        );
-
-        if (!checkbox.isSelected()) {
-            checkbox.click();
-        }
     }
+}
 
     // IT: Open Mass Edit
     public void clickMassEdit() {
